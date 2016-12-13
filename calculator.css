@@ -1,0 +1,85 @@
+.calculator-body {
+    background-color: rgba(59, 58, 58, 1);
+    color: #fff;
+    font-family: lulo-clean-w01-one-bold,sans-serif;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.calculator-body div {
+    text-align: left;
+}
+
+.calc-section-box {
+    border: 3px solid rgb(186, 218, 85);
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.calc-section-title {
+    color: rgb(186, 218, 85);
+    letter-spacing: 0.03em;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
+    font-size: 45px;
+    margin: 0;
+}
+
+.calc-question {
+    margin-top: 35px;
+    margin-bottom: 8px;
+}
+
+.calc-button-row {
+    text-align: center !important;
+}
+.calc-button {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    background-color: rgb(186, 218, 85);
+    border: 2px solid rgba(59, 58, 58, 1);
+    color: rgba(59, 58, 58, 1);
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.calc-button:hover {
+    background-color: rgba(59, 58, 58, 1);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.calc-results {
+    font-size: 20px;
+    text-align: center !important;
+    margin-top: 10px;
+}
+.red-asterisk {
+    color: red;
+    display: inline;
+    margin-left: 2px;
+}
+
+.element-completed {
+    display: none !important;
+}
+
+#invalid-year {
+    color: red;
+    margin-top: 2px;
+}
+
+.error-message {
+    font-size: 16px;
+    color: red;
+}
+
+.calc-money {
+    color: rgb(186, 218, 85);
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
+    font-size: 28px;
+    line-height: 46px;
+}

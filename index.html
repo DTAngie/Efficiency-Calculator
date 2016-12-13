@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- The following three tags in the <head> tag need to be added to the <head>
+tag of the page(s) where the calculators will live. Be sure that the src and href
+point to the actual location where you save them. -->
+
+<head>
+    <script src="jquery-3.1.1.js"></script>
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" type="text/css" href="calculator.css"> 
+</head>
+
+
+<!-- Start copying here for the water calculator -->
+<div class="calculator-body">
+    <div id="water-section" class="calc-section-box">
+        <p class="calc-section-title">Water Spending</p>
+        <p>How many cases do you buy a week?</p>
+        <form>
+            <select id="water-per-week" required>
+            <option value="placeholder">Select an option</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        </form>
+        <div class="calc-button-row">
+        <button id="calculate-water-savings" class="calc-button">Calculate</button>
+        </div>
+        
+
+        <div id="water-savings-result" class="calc-results"></div>
+    </div>
+</div>
+<!-- Stop copying here for the water calculator -->
+
+<!-- Ignore this one line -->
+  <div style="clear: both; background-color: rgba(59, 58, 58, 1);"></div>
+    
+  
+  <!-- Start copying here for the furnace calculator -->
+<div class="calculator-body">
+    <div id="furnace-section" class="calc-section-box">
+
+        <p class="calc-section-title">Furnace savings</p>
+        <p class="calc-question">1. When did you purchase your furnace?<span id="furn-range-ast" class="red-asterisk element-completed">*</span></p>
+
+        <select id="furnace-year-range">
+            <option value="placeholder">Select an option</option>
+            <option value=".80">Before January 2011</option>
+            <option value=".95">After January 2011</option>
+        </select>
+
+        <p class="calc-question">2. In what year did you purchase your furnace?<span id="furn-exact-ast" class="red-asterisk element-completed">*</span></p>
+        <input id="furnace-year-exact" type="number"><div id="invalid-year"></div>
+
+        <p class="calc-question">3. What type of furnace are you looking at?<span id="furn-type-ast" class="red-asterisk element-completed">*</span></p>
+        <input type="radio" name="furnace-type" value="single-stage">Single Stage
+        <input type="radio" name="furnace-type" value="dual-stage">Dual Stage
+        
+
+        <p class="calc-question">4. How much was your highest bill?<span id="high-bill-ast" class="red-asterisk element-completed">*</span></p>
+        <input id="high-payment" type="number">
+        
+        <p class="calc-question">5. How much was your lowest bill?<span id="low-bill-ast" class="red-asterisk element-completed">*</span></p>
+        <input id="low-payment" type="number">
+        <div class="calc-button-row">
+        <button id="calculate-furnace-savings" class="calc-button">Calculate</button>
+        </div>
+
+        <div id="furnace-savings-result" class="calc-results"></div>
+
+    </div>
+</div>
+<!-- Stop coyping here for the furnace calculator -->
